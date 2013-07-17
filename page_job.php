@@ -58,7 +58,7 @@
 		// if visitor comes from an outside website, record the referer
 		if (!empty($outside_referer))
 		{
-			redirect_to(BASE_URL . URL_JOB .'/' . $id . '/' . $id . '/');
+			redirect_to(BASE_URL . URL_JOB .'/' . $id . '/');
 		}
 		else
 		{
@@ -67,7 +67,7 @@
 
 		$job_flag = true;
 		
-		$url = BASE_URL . URL_JOB .'/' . $id . '/' . $id . '/';
+		$url = BASE_URL . URL_JOB .'/' . $id . '/' ;
 		$current_url = 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
 		
 		if ($current_url != $url) redirect_to($url, 301);
