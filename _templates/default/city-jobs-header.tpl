@@ -12,7 +12,7 @@
 				</div><!-- #sort-by-type -->
 				{/if}
 				<h2>
-					{$translations.jobscity.jobs_in} {$city_name}
+                【{$city_name}】{$translations.jobscity.jobs_in}
 				</h2>
 				{if $jobs}
 					{include file="jobs-list.tpl"}
