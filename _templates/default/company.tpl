@@ -3,7 +3,7 @@
 		<div id="content">
 			<div id="job-listings">
 				<h2>
-					{$translations.companies.jobs_at} {$current_company}
+                【{$current_company}】{$translations.companies.jobs_at}
 				</h2>
 				{include file="posts-loop.tpl"}
 			</div><!-- #job-listings -->
