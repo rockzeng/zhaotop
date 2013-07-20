@@ -42,4 +42,6 @@ define('ENABLE_CAPTCHA_ON_APPLY_PAGE', $settings['captcha_enable_on_apply_page']
 define('ENABLE_CAPTCHA_ON_CONTACT_PAGE', $settings['captcha_enable_on_contact_page']);
 // default language code, useful if you with to quickly switch between translation files later
 define('LANG_CODE', 'en');
+//hash algo
+define('HASH_ALGO', 'crc32b');
 ?>
