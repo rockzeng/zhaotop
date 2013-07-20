@@ -11,7 +11,7 @@
 				</div><!-- #sort-by-type -->
 				{/if}
 				<h2>
-					{$translations.category.jobs_for} {$current_category_name}
+                【{$current_category_name}】{$translations.category.jobs_for}
 				</h2>
 				{include file="posts-loop.tpl"}
 			</div><!-- #job-listings -->
