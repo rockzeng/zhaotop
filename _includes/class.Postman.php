@@ -165,7 +165,7 @@ class Postman
 	// Send mail to admin when someone posts a new spam word
 	public function MailReportSpam($data)
 	{
-		$job_title = BASE_URL . URL_JOB .'/' . $data['id'] . '/' . $data['url_title'] . '/';
+		$job_title = BASE_URL . URL_JOB .'/' . $data['id'] . '/';
 		
 		$data['job_title'] = $job_title;
 		$data['edit_url'] = BASE_URL . "post/" . $data['id'] . "/" . $data['auth'] . "/";
