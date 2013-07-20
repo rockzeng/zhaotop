@@ -25,7 +25,7 @@
 			{if $CURRENT_PAGE == ''}
 			<br />
 			<div id="stats">
-				<strong>{$jobs_count_all} {$translations.homepage.sidebar_totaljobs}</strong>
+				<strong>{$translations.homepage.sidebar_totaljobs_part1} {$jobs_count_all} {$translations.homepage.sidebar_totaljobs_part2}</strong>
 				<br />
 				{if $smarty.const.SIDEBAR_SHOW_WHAT == 'categories'}
 					{foreach item=job from=$jobs_count_all_categs}
