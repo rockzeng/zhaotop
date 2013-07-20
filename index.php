@@ -148,7 +148,7 @@
 			
 		case 'rss':
 			require_once 'page_rss.php';
-			$html_title = 'RSS Feeds for ' . SITE_NAME;
+			$html_title = 'RSS 订阅 - ' . SITE_NAME;
 			$flag = 1;
 			break;
 			
