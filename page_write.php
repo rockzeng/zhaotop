@@ -268,11 +268,11 @@
 	
 	if ($later_edit)
 	{
-		$html_title = $translations['jobs']['title_edit'] . ' / ' . SITE_NAME;
+		$html_title = $translations['jobs']['title_edit'] . ' - ' . SITE_NAME;
 	}
 	else
 	{
-		$html_title = $translations['jobs']['title_new'] . ' / ' . SITE_NAME;
+		$html_title = $translations['jobs']['title_new'] . ' - ' . SITE_NAME;
 	}
 	
 	if (isset($apply_online))

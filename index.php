@@ -176,7 +176,7 @@
 			break;
 			
 		case 'job-unavailable':
-			$html_title = 'Unavailable job / ' . SITE_NAME;
+			$html_title = 'Unavailable job - ' . SITE_NAME;
 			$template = 'no-job.tpl';
 			$flag = 1;
 			break;
@@ -194,7 +194,7 @@
 		// 404 etc. error page
 		case 'page-unavailable':
 			// TO-DO: add suggestion if no trailing slash supplied
-			$html_title = 'Page unavailable / ' . SITE_NAME;
+			$html_title = 'Page unavailable - ' . SITE_NAME;
 			$template = 'error.tpl';
 			$flag = 1;
 			break;
