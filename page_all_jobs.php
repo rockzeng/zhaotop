@@ -41,9 +41,9 @@
 	$smarty->assign('jobs', $the_jobs);
 	$smarty->assign('types', get_types());
 
-	$smarty->assign('seo_title', 'All jobs');
-	$smarty->assign('seo_desc', '');
-	$smarty->assign('seo_keys', '');
+	$smarty->assign('seo_title', '全部职位 - zhaotop.com');
+	$smarty->assign('seo_desc', '全部职位 - zhaotop.com');
+	$smarty->assign('seo_keys', 'zhaotop.com - 招聘 工作 找工作 职位搜索 空缺 高薪 知名企业 外企 招聘 招聘网站 应聘 跳槽 简历 人才 兼职 猎头 求职指导 计算机 研发 工程师 IT工作 经理 总监 牛人 大牛 高手 达人 高并发 大数据');
 	
 	$template = 'all-jobs-header.tpl';
 ?>
