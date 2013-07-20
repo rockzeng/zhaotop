@@ -25,6 +25,6 @@
 	
 	$smarty->assign('total_number_of_jobs', $totalNumberOfJobs);
 	
-	$html_title = $translations['jobscity']['page_title'];
+	$html_title = $translations['jobscity']['page_title'] .' - '.SITE_NAME;
 	$template = 'cities.tpl';
 ?>
