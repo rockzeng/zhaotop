@@ -39,9 +39,9 @@
 	$smarty->assign('city_name', $city['name']);
 	$smarty->assign('city_ascii_name', $city_ascii_name);
 
-	$smarty->assign('seo_title', 'Jobs in ' . $city['name']);
-	$smarty->assign('seo_desc', '');
-	$smarty->assign('seo_keys', '');
+	$smarty->assign('seo_title', $city['name'] . '所有职位 - ' .SITE_NAME);
+	$smarty->assign('seo_desc', '' . $city['name']);
+	$smarty->assign('seo_keys', '' . $city['name']);
 	
 	$template = 'city-jobs-header.tpl';
 ?>
