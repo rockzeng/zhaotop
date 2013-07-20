@@ -127,7 +127,7 @@
 			if(!ENABLE_NEW_JOBS) { redirect_to(BASE_URL); exit; }
 			$flag =1;
 			$job = new Job($id);
-			$job_title = BASE_URL . URL_JOB .'/' . $job->mId . '/' . $job->mUrlTitle . '/';
+			$job_title = BASE_URL . URL_JOB .'/' . $job->mId . '/';
 			$smarty->assign('auth', $job->GetAuth());
 			$smarty->assign('job_url', $job_title);
 			$smarty->assign('postRequiresModeration', $extra);
