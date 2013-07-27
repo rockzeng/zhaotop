@@ -7,9 +7,14 @@
 			<div id="job-bottom">
 				<div id="job-post-utils">
 					<a href="{$back_link}" title="category home">&laquo; {$translations.notfound.back}</a><br />
-					{$translations.jobs.report_fake} <a href="#" onclick="Jobber.ReportSpam('{$BASE_URL}report-spam/', {$job.id}); return false;" title="report fake ad">{$translations.jobs.report_it}</a>
+					{$translations.jobs.report_fake} <a href="#" onclick="Jobber.ReportSpam('{$BASE_URL}report-spam/', {$job.id}); return false;" title="{$translations.jobs.report_fake}">{$translations.jobs.report_it}</a>
 					&nbsp;&nbsp;<span id="report-spam-response"></span><br />
 					<a href="#" onclick="Jobber.SendToFriend.showHide(); return false;" title="{$translations.recommend.title}">{$translations.recommend.title}</a>
+                    <span style="margin-left: 20px;">{$translations.share.transform}:
+                        <a href="#" onclick="Jobber.ShareToSina('{$BASE_URL}{$URL_JOB}/{$job.id}/{$job.url_title}/','{$translations.share.recommend_prefix} {$job.title}—{$job.location} {$translations.share.recommend_suffix}','http://v.t.sina.com.cn/share/share.php?c=zhaotop&url=[URL]&title=[TITLE]&source=zhaotop&sourceUrl=http://www.zhaotop.com/&content=utf8'); return false;" title="{$translations.share.title}">
+                            <img src="{$BASE_URL}_templates/{$THEME}/img/icon-share.gif" alt="{$translations.share.title}" />
+                        </a>
+                    </span>
 				</div><!-- #job-post-utils -->
 				<div id="number-views">
 					{$translator->translate("jobs.published_at", "<strong>`$job.created_on`</strong>")}
