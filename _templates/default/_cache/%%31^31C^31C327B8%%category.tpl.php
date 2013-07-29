@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2013-07-17 18:15:37
+<?php /* Smarty version 2.6.26, created on 2013-07-27 16:40:57
          compiled from category.tpl */ ?>
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "header.tpl", 'smarty_include_vars' => array()));
@@ -51,8 +51,8 @@ _templates/<?php echo $this->_tpl_vars['THEME']; ?>
 				</div><!-- #sort-by-type -->
 				<?php endif; ?>
 				<h2>
-					<?php echo $this->_tpl_vars['translations']['category']['jobs_for']; ?>
- <?php echo $this->_tpl_vars['current_category_name']; ?>
+                【<?php echo $this->_tpl_vars['current_category_name']; ?>
+】<?php echo $this->_tpl_vars['translations']['category']['jobs_for']; ?>
 
 				</h2>
 				<?php $_smarty_tpl_vars = $this->_tpl_vars;

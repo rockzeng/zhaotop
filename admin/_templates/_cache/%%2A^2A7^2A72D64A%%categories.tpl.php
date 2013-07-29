@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2012-11-22 01:22:04
+<?php /* Smarty version 2.6.26, created on 2013-07-27 21:01:18
          compiled from categories.tpl */ ?>
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "header.tpl", 'smarty_include_vars' => array()));
@@ -18,7 +18,7 @@ unset($_smarty_tpl_vars);
 						<div class="categoryHandle"></div>
 						<div class="categoryWrapper">
 							<a href="#" title="Delete this category" class="deleteCategory"><img src="<?php echo $this->_tpl_vars['BASE_URL_ADMIN']; ?>
-_templates/img/bin.png" alt="Delete" /></a>
+_templates/img/icon-delete.png" alt="Delete" /></a>
 							<label><span>Name:</span><input type="text" size="60" name="name[<?php echo $this->_tpl_vars['category']['id']; ?>
 ]" value="<?php echo $this->_tpl_vars['category']['name']; ?>
 " /></label>

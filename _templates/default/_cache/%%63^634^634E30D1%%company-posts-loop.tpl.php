@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2013-07-17 18:15:32
+<?php /* Smarty version 2.6.26, created on 2013-07-27 16:40:47
          compiled from company-posts-loop.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'cycle', 'company-posts-loop.tpl', 6, false),)), $this); ?>
@@ -25,7 +25,6 @@ _templates/<?php echo $this->_tpl_vars['THEME']; ?>
 			<a href="<?php echo $this->_tpl_vars['BASE_URL']; ?>
 <?php echo $this->_tpl_vars['URL_JOB']; ?>
 /<?php echo $this->_tpl_vars['compjob']['id']; ?>
-/<?php echo $this->_tpl_vars['compjob']['url_title']; ?>
 /" title="<?php echo $this->_tpl_vars['compjob']['title']; ?>
 "><?php echo $this->_tpl_vars['compjob']['title']; ?>
 </a> <span class="la"><?php echo $this->_tpl_vars['translations']['homepage']['at']; ?>

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2013-07-17 18:15:32
+<?php /* Smarty version 2.6.26, created on 2013-07-29 15:09:01
          compiled from footer.tpl */ ?>
 	</div><!-- #container -->
 	<div class="footer">
@@ -118,14 +118,20 @@ $this->_sections['tmp']['last']       = ($this->_sections['tmp']['iteration'] ==
 				<?php endif; ?>
 			</div>
 			<div id="footer-copyright">
-											</div>
+				<?php echo $this->_tpl_vars['translations']['footer']['powered_by']; ?>
+
+				<a href="http://www.zhaotop.com/" title="哇才网">哇才网</a>
+                <div>
+                    <script src="http://s21.cnzz.com/stat.php?id=4976636&web_id=4976636&show=pic" language="JavaScript"></script>
+                </div>
+			</div>
 			<div class="clear"></div>
 		</div><!-- #footer-contents -->
 	</div><!-- .footer -->
 	<?php echo '
 	<script type="text/javascript">
 		//<![CDATA[
-		
+
  		$(document).ready(function()
 		{
 		   var keywords = $(\'#keywords\');
@@ -139,7 +145,7 @@ $this->_sections['tmp']['last']       = ($this->_sections['tmp']['iteration'] ==
 				}
 			});
 
-			keywords.bind(\'blur\', function() {  
+			keywords.bind(\'blur\', function() {
 				if (this.value == \''; ?>
 <?php echo $this->_tpl_vars['translations']['search']['default']; ?>
 <?php echo '\' || this.value == \'\')
@@ -154,11 +160,11 @@ $this->_sections['tmp']['last']       = ($this->_sections['tmp']['iteration'] ==
 			keywords.keyup(function(key) {
 				var searchKeywords = jQuery.trim(this.value);
 				var len = searchKeywords.length;
-				
+
 			    if (key.keyCode != 9 && len >= 3)
 				{
 					$("#indicator").show();	
-					clearTimeout(window.search_timer);	
+					clearTimeout(window.search_timer);
 					window.search_timer = setTimeout(function(){Jobber.PerformSearch(\''; ?>
 <?php echo $this->_tpl_vars['BASE_URL']; ?>
 <?php echo 'search/'; ?>

@@ -2,81 +2,80 @@
 <emails>
 	<SendToFriend>
 		<subject>
-				I'm recommending you a job ad
+				推荐的岗位
 		</subject>
 		<message>
 			<![CDATA[
-				{BR}{BR}---{BR}You've received this e-mail from {YOUR_EMAIL}
+				{BR}{BR}---{BR}你收到的邮件来自你的朋友，他的邮箱地址： {YOUR_EMAIL}
 			]]>
 		</message>
 	</SendToFriend>
 	
 	<ApplyOnline>
 		<subject>
-				[ {SITE_NAME} ] I wish to apply for {JOB_TITLE}
+				[ {SITE_NAME} ] 我希望申请 {JOB_TITLE}
 		</subject>
 		<message>
 			<![CDATA[
-				{BR}{BR}---{BR}This e-mail is an application sent from {JOB_URL}
+				{BR}{BR}---{BR}这封邮箱来自：{JOB_URL}
 			]]>
 		</message>
 	</ApplyOnline>
 	
 	<PublishToAdmin>
 		<newPostSubject>
-				[ {SITE_NAME}  ] New job: {JOB_TITLE}
+				[ {SITE_NAME}  ] 新发布的工作: {JOB_TITLE}
 		</newPostSubject>
 		<editedPostSubject>
-				[ {SITE_NAME}  ] Edited job: {JOB_TITLE}
+				[ {SITE_NAME}  ] 编辑工作: {JOB_TITLE}
 		</editedPostSubject>
 		<message>
 			<![CDATA[
 				{JOB_URL}
-				{BR} {JOB_TITLE} at {JOB_COMPANY}
+				{BR} {JOB_TITLE} 发布者为 {JOB_COMPANY}
 				{BR} {JOB_DESCRIPTION}
 				{BR} URL: {JOB_URL}
-				{BR}---{BR} Published by: {JOB_POSTER_EMAIL}
-				{BR}---{BR} Edit: {JOB_EDIT_URL}
-				{BR} Deactivate: {JOB_DEACTIVATE_URL}
+				{BR}---{BR} 发布者: {JOB_POSTER_EMAIL}
+				{BR}---{BR} 编辑: {JOB_EDIT_URL}
+				{BR} 删除: {JOB_DEACTIVATE_URL}
 				{BR}{BR}---{BR} IP: {JOB_POSTER_IP}
-				{BR} Date: {JOB_POST_DATE}
+				{BR} 时间: {JOB_POST_DATE}
 			]]>
 		</message>
 		<messageFirstPost>
 			<![CDATA[
-				Activate ad {JOB_ACTIVATE_URL}{BR}
+				发布招聘信息 {JOB_ACTIVATE_URL}{BR}
 			]]>
 		</messageFirstPost>
 	</PublishToAdmin>
 	
 	<PublishPendingToUser>
 		<subject>
-				Your ad on {SITE_NAME}
+				你的招聘信息为 {SITE_NAME}
 		</subject>
 		<message>
 			<![CDATA[
-				Hello! :){BR}{BR}
-				We apologize for the inconvenience, but since this is the first time you post with this e-mail address, we need to manually verify it.
-				{BR}Thank you for your patience, as the ad should be published ASAP. We'll send you an e-mail when that happens!
-				{BR}{BR}From now on, every ad you post with this e-mail address will instantly be published.
-				{BR}{BR}---{BR}Thank you for using our service!
-				{BR}The Team
+				您好! :){BR}{BR}
+				很抱歉，您的邮箱地址是第一次在哇才网发布招聘信息，我们需要手动验证。
+				{BR}{BR}请耐心等候，验证通过后，您使用的此邮箱再发布招聘信息，都将实时发布招聘信息。
+				{BR}{BR}---{BR}谢谢你使用我们的服务!
+				{BR}哇才网团队
 			]]>
 		</message>
 	</PublishPendingToUser>
 	
 	<PublishToUser>
 		<subject>
-				Your ad on {SITE_NAME} was published 
+				你发布的 {SITE_NAME} 已经显示
 		</subject>
 		<message>
 			<![CDATA[
-				Hello! :){BR}{BR}
-				Your ad was published and is available at {JOB_URL}
-				{BR}{BR}---{BR}Edit it: {JOB_EDIT_URL}
-				{BR}Deactivate it: {JOB_DEACTIVATE_URL}
-				{BR}{BR}---{BR}Thank you for using our service!
-				{BR} The {SITE_NAME} Team
+				你好! {BR}{BR}
+				你发布的招聘信息在： {JOB_URL}
+				{BR}{BR}---{BR}编辑: {JOB_EDIT_URL}
+				{BR}删除: {JOB_DEACTIVATE_URL}
+				{BR}{BR}---{BR}谢谢您使用我们的服务!
+				{BR} 我是 {SITE_NAME} 团队
 			]]>
 		</message>
 	</PublishToUser>
@@ -87,28 +86,28 @@
 		</subject>
 		<message>
 			<![CDATA[
-				Following ad was reported as false/spam: {BR}---{BR}{BR}
+				以下是报告为虚假招聘： {BR}---{BR}{BR}
 				{JOB_URL}
 				{BR}{BR} {JOB_TITLE} at {JOB_COMPANY}
 				{BR}{BR} {JOB_DESCRIPTION}
-				{BR}{BR}---{BR} Published by: {JOB_POSTER_EMAIL}
-				{BR}---{BR}Edit: {JOB_EDIT_URL}
-				{BR} Deactivate: {JOB_DEACTIVATE_URL}
+				{BR}{BR}---{BR} 发布者为: {JOB_POSTER_EMAIL}
+				{BR}---{BR}编辑: {JOB_EDIT_URL}
+				{BR} 删除: {JOB_DEACTIVATE_URL}
 				{BR}---{BR}IP: {JOB_POSTER_IP}
-				{BR} Date: {JOB_POST_DATE}
+				{BR} 时间: {JOB_POST_DATE}
 			]]>
 		</message>
 	</ReportSpam>
 	
 	<Contact>
 		<subject>
-				 [{SITE_NAME}] contact
+				 [{SITE_NAME}] 联系
 		</subject>
 		<message>
 			<![CDATA[
-				{BR}{BR}---{BR} Sent by: {SENDER_NAME} <{SENDER_EMAIL}>
+				{BR}{BR}---{BR} 发布者: {SENDER_NAME} <{SENDER_EMAIL}>
 				{BR} IP: {SENDER_IP}
-				{BR} Date: {SEND_DATE}
+				{BR} 时间: {SEND_DATE}
 			]]>
 		</message>
 	</Contact>

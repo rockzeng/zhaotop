@@ -1,9 +1,6 @@
 			{if $CURRENT_PAGE != ''}
-			<a href="{$BASE_URL}" title="{$translations.header.title}">&laquo; {$translations.header.home}</a><br />
-			{/if}
-
-			{if $navigation.secondary != ''}
-			<h4>{$translations.sidebar.menu_title}</h4>
+			<a href="{$BASE_URL}" title="{$translations.header.title}">&laquo; {$translations.header.home}</a><br />{/if}{if $navigation.secondary != ''}
+            <h4>{$translations.sidebar.menu_title}</h4>
 			<ul>
 				{section name=tmp loop=$navigation.secondary}
 					{if $smarty.const.ENABLE_NEW_JOBS || (!$smarty.const.ENABLE_NEW_JOBS && $navigation.secondary[tmp].url != 'post')}

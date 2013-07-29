@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2012-11-26 13:00:15
+<?php /* Smarty version 2.6.26, created on 2013-07-28 13:59:17
          compiled from edit-post.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'escape', 'edit-post.tpl', 49, false),)), $this); ?>

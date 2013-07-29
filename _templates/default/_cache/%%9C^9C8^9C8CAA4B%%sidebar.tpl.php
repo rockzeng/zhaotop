@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2013-07-17 18:15:32
+<?php /* Smarty version 2.6.26, created on 2013-07-27 16:39:22
          compiled from sidebar.tpl */ ?>
 			<?php if ($this->_tpl_vars['CURRENT_PAGE'] != ''): ?>
 			<a href="<?php echo $this->_tpl_vars['BASE_URL']; ?>
@@ -84,8 +84,9 @@ $this->_sections['last']['last']       = ($this->_sections['last']['iteration'] 
 			<?php if ($this->_tpl_vars['CURRENT_PAGE'] == ''): ?>
 			<br />
 			<div id="stats">
-				<strong><?php echo $this->_tpl_vars['jobs_count_all']; ?>
- <?php echo $this->_tpl_vars['translations']['homepage']['sidebar_totaljobs']; ?>
+				<strong><?php echo $this->_tpl_vars['translations']['homepage']['sidebar_totaljobs_part1']; ?>
+ <?php echo $this->_tpl_vars['jobs_count_all']; ?>
+ <?php echo $this->_tpl_vars['translations']['homepage']['sidebar_totaljobs_part2']; ?>
 </strong>
 				<br />
 				<?php if (@SIDEBAR_SHOW_WHAT == 'categories'): ?>

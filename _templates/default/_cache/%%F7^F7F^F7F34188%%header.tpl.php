@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2013-07-17 18:15:32
+<?php /* Smarty version 2.6.26, created on 2013-07-27 16:39:22
          compiled from header.tpl */ ?>
 <?php if ($this->_tpl_vars['CURRENT_PAGE'] == 'page-unavailable' || $this->_tpl_vars['CURRENT_PAGE'] == 'job-unavailable'): ?>
 	<?php header("HTTP/1.0 404 Not Found"); ?>
@@ -15,8 +15,6 @@
     <meta name="keywords" content="<?php if ($this->_tpl_vars['seo_keys']): ?><?php echo $this->_tpl_vars['seo_keys']; ?>
 <?php else: ?><?php echo $this->_tpl_vars['meta_keywords']; ?>
 <?php endif; ?>" />
-	<meta name="generator" content="Jobberbase v<?php echo @JOBBERBASE_VERSION; ?>
-" />
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
 	<link rel="shortcut icon" href="<?php echo $this->_tpl_vars['BASE_URL']; ?>
 favicon.ico" type="image/x-icon" />

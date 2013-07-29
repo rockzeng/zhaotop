@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2013-07-17 18:15:37
+<?php /* Smarty version 2.6.26, created on 2013-07-27 16:40:57
          compiled from posts-loop.tpl */ ?>
 <?php if ($this->_tpl_vars['is_home'] == 1): ?>
 	<div><a href="<?php echo $this->_tpl_vars['BASE_URL']; ?>
@@ -18,9 +18,10 @@ unset($_smarty_tpl_vars);
 	<?php else: ?>
 		<div id="no-ads">
 			<?php if ($this->_tpl_vars['CURRENT_PAGE'] != 'search'): ?>
-				<?php echo $this->_tpl_vars['translations']['jobs']['no_job']; ?>
+				<?php echo $this->_tpl_vars['translations']['jobs']['no_job_part1']; ?>
  <strong><?php echo $this->_tpl_vars['current_category_name']; ?>
-</strong>.
+</strong><?php echo $this->_tpl_vars['translations']['jobs']['no_job_part2']; ?>
+.
 				<?php if (@ENABLE_NEW_JOBS): ?>
 					<br /><a href="<?php echo $this->_tpl_vars['BASE_URL']; ?>
 post/" title="<?php echo $this->_tpl_vars['translations']['footer']['new_job_title']; ?>

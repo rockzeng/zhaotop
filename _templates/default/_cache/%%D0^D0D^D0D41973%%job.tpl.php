@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2013-07-17 18:15:32
+<?php /* Smarty version 2.6.26, created on 2013-07-28 20:18:46
          compiled from job.tpl */ ?>
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "header.tpl", 'smarty_include_vars' => array()));
@@ -22,12 +22,31 @@ unset($_smarty_tpl_vars);
 					<?php echo $this->_tpl_vars['translations']['jobs']['report_fake']; ?>
  <a href="#" onclick="Jobber.ReportSpam('<?php echo $this->_tpl_vars['BASE_URL']; ?>
 report-spam/', <?php echo $this->_tpl_vars['job']['id']; ?>
-); return false;" title="report fake ad"><?php echo $this->_tpl_vars['translations']['jobs']['report_it']; ?>
+); return false;" title="<?php echo $this->_tpl_vars['translations']['jobs']['report_fake']; ?>
+"><?php echo $this->_tpl_vars['translations']['jobs']['report_it']; ?>
 </a>
 					&nbsp;&nbsp;<span id="report-spam-response"></span><br />
 					<a href="#" onclick="Jobber.SendToFriend.showHide(); return false;" title="<?php echo $this->_tpl_vars['translations']['recommend']['title']; ?>
 "><?php echo $this->_tpl_vars['translations']['recommend']['title']; ?>
 </a>
+                    <span style="margin-left: 20px;"><?php echo $this->_tpl_vars['translations']['share']['transform']; ?>
+:
+                        <a href="#" onclick="Jobber.ShareToSina('<?php echo $this->_tpl_vars['BASE_URL']; ?>
+<?php echo $this->_tpl_vars['URL_JOB']; ?>
+/<?php echo $this->_tpl_vars['job']['id']; ?>
+/<?php echo $this->_tpl_vars['job']['url_title']; ?>
+/','<?php echo $this->_tpl_vars['translations']['share']['recommend_prefix']; ?>
+ <?php echo $this->_tpl_vars['job']['title']; ?>
+—<?php echo $this->_tpl_vars['job']['location']; ?>
+ <?php echo $this->_tpl_vars['translations']['share']['recommend_suffix']; ?>
+','http://v.t.sina.com.cn/share/share.php?c=zhaotop&url=[URL]&title=[TITLE]&source=zhaotop&sourceUrl=http://www.zhaotop.com/&content=utf8'); return false;" title="<?php echo $this->_tpl_vars['translations']['share']['title']; ?>
+">
+                            <img src="<?php echo $this->_tpl_vars['BASE_URL']; ?>
+_templates/<?php echo $this->_tpl_vars['THEME']; ?>
+/img/icon-share.gif" alt="<?php echo $this->_tpl_vars['translations']['share']['title']; ?>
+" />
+                        </a>
+                    </span>
 				</div><!-- #job-post-utils -->
 				<div id="number-views">
 					<?php echo $this->_tpl_vars['translator']->translate("jobs.published_at","<strong>".($this->_tpl_vars['job']['created_on'])."</strong>"); ?>

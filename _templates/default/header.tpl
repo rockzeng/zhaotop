@@ -10,9 +10,9 @@
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
 	<link rel="shortcut icon" href="{$BASE_URL}favicon.ico" type="image/x-icon" />
 	{if $CURRENT_PAGE == '' || $CURRENT_PAGE != 'jobs'}
-		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{$BASE_URL}rss/all/" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{$BASE_URL}rss/all/" />
 	{else}
-		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{$BASE_URL}rss/{$current_category}/" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{$BASE_URL}rss/{$current_category}/" />
 	{/if}
 	<link rel="stylesheet" href="{$BASE_URL}_templates/{$THEME}/css/screen.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="{$BASE_URL}_templates/{$THEME}/css/print.css" media="print" type="text/css" />
@@ -26,7 +26,6 @@
 	<script type="text/javascript">
 		Jobber.I18n = {$translationsJson};
 	</script>
-	
 </head>
 
 <body>
@@ -35,15 +34,11 @@
 			<div id="status">
 				{$smarty.session.status}
 			</div><!-- #status -->
-		{/if}
-		<div id="header">
+		{/if}<div id="header">
 			<h1 id="logo"><a href="{$BASE_URL}" title="{$translations.header.title}">{$translations.header.name}</a></h1>
-			<ul id="top">
-				{if $navigation.primary != ''}
-					{section name=tmp loop=$navigation.primary}
-						{if $smarty.const.ENABLE_NEW_JOBS || (!$smarty.const.ENABLE_NEW_JOBS && $navigation.primary[tmp].url != 'post')}
-							{if $i==1}<li>&bull;</li>{/if}
-							<li><a href="{if $navigation.primary[tmp].outside != 1}{$BASE_URL}{/if}{$navigation.primary[tmp].url}/" title="{$navigation.primary[tmp].title}" >{$navigation.primary[tmp].name}</a></li>
+			<ul id="top">{if $navigation.primary != ''}{section name=tmp loop=$navigation.primary}{if $smarty.const.ENABLE_NEW_JOBS || (!$smarty.const.ENABLE_NEW_JOBS && $navigation.primary[tmp].url != 'post')}{if $i==1}
+                <li>&bull;</li>{/if}
+                <li><a href="{if $navigation.primary[tmp].outside != 1}{$BASE_URL}{/if}{$navigation.primary[tmp].url}/" title="{$navigation.primary[tmp].title}" >{$navigation.primary[tmp].name}</a></li>
 							{assign var=i value=1}
 						{/if}
 					{/section}

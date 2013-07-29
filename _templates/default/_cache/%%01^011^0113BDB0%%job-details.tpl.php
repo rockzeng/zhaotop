@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2013-07-17 18:15:32
+<?php /* Smarty version 2.6.26, created on 2013-07-27 16:40:47
          compiled from job-details.tpl */ ?>
 			<div id="job-details">
 				<?php if ($_SESSION['apply_successful'] && $_SESSION['apply_successful'] == 1): ?>

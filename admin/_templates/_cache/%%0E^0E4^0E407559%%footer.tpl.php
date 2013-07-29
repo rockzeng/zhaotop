@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2012-11-24 15:52:52
+<?php /* Smarty version 2.6.26, created on 2013-07-27 16:48:37
          compiled from footer.tpl */ ?>
 	</div><!-- #wrap -->
 	<div class="footer clear">

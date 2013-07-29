@@ -1,9 +1,9 @@
-#AddType application/x-httpd-php5 .php
+AddType application/x-httpd-php5 .php
 
 RewriteEngine on
-#Options +FollowSymlinks
+Options +FollowSymlinks
 
-RewriteBase /zhaotop/admin/
+RewriteBase /admin
 
 #RewriteCond %{REQUEST_FILENAME} !-f
 #RewriteCond %{REQUEST_FILENAME} !-d
