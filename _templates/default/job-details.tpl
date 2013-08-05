@@ -20,7 +20,7 @@
 				</div>
 				{/if}
 				<h2>
-					<img src="{$BASE_URL}_templates/{$THEME}/img/icon-{$job.type_var_name}.png" alt="{$job.type_name}" /> {$job.title} 
+					<img src="{$BASE_URL}_templates/{$THEME}/img/icon-{$job.type_var_name}.png" alt="{$job.type_name}" width="44" height="11" /> {$job.title}
 				</h2>
 				<p>
 					<span class="fading">{$translations.jobs.preposition_at}</span>

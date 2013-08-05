@@ -2,7 +2,7 @@
 	{php}header("HTTP/1.0 404 Not Found");{/php}
 {/if}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>{if $seo_title}{$seo_title}{else}{$html_title}{/if}</title>
     <meta name="description" content="{if $seo_desc}{$seo_desc}{else}{$meta_description}{/if}" />
@@ -45,7 +45,7 @@
 				{/if}
 			</ul>
 			<div id="the_feed">
-				<a href="{$BASE_URL}rss/all/" title="{$translations.header.rss_title}"><img src="{$BASE_URL}_templates/{$THEME}/img/bt-rss.png" alt="{$translations.header.rss_alt}" /></a>
+				<a href="{$BASE_URL}rss/all/" title="{$translations.header.rss_title}"><img src="{$BASE_URL}_templates/{$THEME}/img/bt-rss.png" alt="{$translations.header.rss_alt}" width="102" height="24"/></a>
 			</div>
 		</div><!-- #header -->
 		
@@ -55,7 +55,7 @@
 					<fieldset>
 						<div>
 							<input type="text" name="keywords" id="keywords" maxlength="30" value="{if $keywords}{$keywords}{else}{$translations.search.default}{/if}" />
-							<span id="indicator" style="display: none;"><img src="{$BASE_URL}_templates/{$THEME}/img/ajax-loader.gif" alt="" /></span>
+							<span id="indicator" style="display: none;"><img src="{$BASE_URL}_templates/{$THEME}/img/ajax-loader.gif" alt="正在加载" height="16" width="16" /></span>
 						</div>
 						<div><label class="suggestionTop">{$translations.search.example}</label></div>
 					</fieldset>
