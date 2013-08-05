@@ -36,6 +36,12 @@
 				<a href="http://www.zhaotop.com/" title="哇才网">哇才网</a>
                 <div>
                     <script src="http://s21.cnzz.com/stat.php?id=4976636&web_id=4976636&show=pic" language="JavaScript"></script>
+                    <!-- zhaotop.com Baidu tongji analytics -->
+                    <script type="text/javascript">
+                        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+                        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F6f21750de8bf14c545a6d893ae938231' type='text/javascript'%3E%3C/script%3E"));
+                    </script>
+
                 </div>
 			</div>
 			<div class="clear"></div>
