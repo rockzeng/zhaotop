@@ -6,10 +6,16 @@ RewriteEngine on
 RewriteBase /zhaotop/
 
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^/]+)/$ index.php?page=$1 [L]
+RewriteRule ^(sitemap.txt)$ index.php?page=$1 [L]
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([^/]+)/([^/]+)/$ index.php?page=$1&id=$2 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/$ index.php?page=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(sitemap.xml)$ index.php?page=$1 [L]
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([^/]+)/([^/]+)/([^/]+)/$ index.php?page=$1&id=$2&extra=$3 [L]
