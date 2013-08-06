@@ -3,7 +3,7 @@
 {/if}
 {if $no_categ != 1}
 	{if $keywords}
-		Search results for <strong>{$keywords}</strong>:
+    以下是与 <strong>{$keywords}</strong>相关的结果:
 	{/if}
 	{if $jobs}
 		{include file="jobs-list.tpl"}

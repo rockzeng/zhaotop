@@ -8,7 +8,7 @@
 			<img src="{$BASE_URL}_templates/{$THEME}/img/icon-{$compjob.type_var_name}.png" alt="{$compjob.type_name}" width="44" height="11"/>
 			<a href="{$BASE_URL}{$URL_JOB}/{$compjob.id}/" title="{$compjob.title}">{$compjob.title}</a> <span class="la">{$translations.homepage.at}</span> {$compjob.company}{if $compjob.is_location_anywhere}, {$translations.jobs.location_anywhere}{else} <span class="la">{$translations.homepage.in}</span> {$compjob.location}{/if}
 		</span>
-		<span class="time-posted"><img src="{$BASE_URL}_templates/{$THEME}/img/clock.gif" alt="" width="12" height="12"/> {$compjob.created_on}</span>
+		<span class="time-posted"><img src="{$BASE_URL}_templates/{$THEME}/img/clock.gif" alt="{$compjob.created_on}" width="12" height="12"/> {$compjob.created_on}</span>
 	</div>
 {/if}
 {/foreach}
