@@ -33,8 +33,9 @@
 			</div>
 			<div id="footer-copyright">
 				{$translations.footer.powered_by}
-				<a href="http://www.zhaotop.com/" title="哇才网">哇才网</a>
                 <div>
+                    <a href="http://www.zhaotop.com/" title="哇才网">哇才网</a>
+                    粤ICP备13054508号-2
                     <script src="http://s21.cnzz.com/stat.php?id=4976636&web_id=4976636&show=pic" language="JavaScript"></script>
                     <!-- zhaotop.com Baidu tongji analytics -->
                     <script type="text/javascript">
