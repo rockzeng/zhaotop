@@ -2,7 +2,7 @@
 	{php}header("HTTP/1.0 404 Not Found");{/php}
 {/if}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wb="http://open.weibo.com/wb">
 <head>
     <title>{if $seo_title}{$seo_title}{else}{$html_title}{/if}</title>
     <meta name="description" content="{if $seo_desc}{$seo_desc}{else}{$meta_description}{/if}" />
@@ -23,6 +23,7 @@
 	<script src="{$BASE_URL}js/jquery.metadata.js" type="text/javascript"></script>
 	<script src="{$BASE_URL}js/jquery.validate.min.js" type="text/javascript"></script>
 	<script src="{$BASE_URL}js/functions.js" type="text/javascript"></script>
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=49451181" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		Jobber.I18n = {$translationsJson};
 	</script>

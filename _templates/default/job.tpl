@@ -11,9 +11,13 @@
 					&nbsp;&nbsp;<span id="report-spam-response"></span><br />
 					<a href="#" onclick="Jobber.SendToFriend.showHide(); return false;" title="{$translations.recommend.title}">{$translations.recommend.title}</a>
                     <span style="margin-left: 20px;">{$translations.share.transform}:
-                        <a href="#" onclick="Jobber.ShareToSina('{$BASE_URL}{$URL_JOB}/{$job.id}/','{$translations.share.recommend_prefix} {$job.title}—{$job.location} {$translations.share.recommend_suffix}','http://v.t.sina.com.cn/share/share.php?c=zhaotop&url=[URL]&title=[TITLE]&source=zhaotop&sourceUrl=http://www.zhaotop.com/&content=utf8'); return false;" title="{$translations.share.title}">
-                            <img src="{$BASE_URL}_templates/{$THEME}/img/icon-share.gif" alt="{$translations.share.title}" width="16" height="25" />
-                        </a>
+                        {*<a href="#" onclick="Jobber.ShareToSina('{$BASE_URL}{$URL_JOB}/{$job.id}/','{$translations.share.recommend_prefix} {$job.title}—{$job.location} {$translations.share.recommend_suffix}','http://v.t.sina.com.cn/share/share.php?c=zhaotop&url=[URL]&title=[TITLE]&source=zhaotop&sourceUrl=http://www.zhaotop.com/&content=utf8'); return false;" title="{$translations.share.title}">*}
+                            {*<img src="{$BASE_URL}_templates/{$THEME}/img/icon-share.gif" alt="{$translations.share.title}" width="16" height="25" />*}
+                        {*</a>*}
+
+                        <wb:share-button size='small' count="n" url='{$BASE_URL}{$URL_JOB}/{$job.id}/'
+                                         title='{$translations.share.recommend_prefix} {$job.title}—{$job.location} {$translations.share.recommend_suffix}'
+                                         appkey="49451181" relateuid="2927686347"/>
                     </span>
 				</div><!-- #job-post-utils -->
 				<div id="number-views">
